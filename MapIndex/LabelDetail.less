@@ -1,0 +1,265 @@
+.person-detail-wrap {
+  .ant-modal {
+    background-image: url('../../../../assets/images/monitoring/member_detail_background.png');
+    background-size: 100% 100%;
+  }
+  .ant-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: transparent;
+  }
+  .ant-modal-title {
+    color: #fff;
+    font-size: 14px;
+  }
+  .ant-modal-content {
+    color: #fff;
+    background: transparent;
+  }
+
+  .ant-modal-body {
+    padding: 0;
+  }
+  .ant-modal-close-x {
+    width: 35px;
+    height: 35px;
+    margin: 19px 4px 0 0;
+    line-height: 1;
+  }
+
+  .modal-body-container {
+    display: flex;
+  }
+
+  .left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    padding: 5px 12px 20px 25px;
+    font-size: 14px;
+    .avatar-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 9px;
+      .avatar-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 130px;
+        height: 130px;
+        background-image: url('../../../../assets/images/monitoring/avatar_frame.png');
+        background-size: 100% 100%;
+      }
+
+      .online-status {
+        margin-top: 6px;
+        font-size: 14px;
+        line-height: 1;
+      }
+
+      .offline-status {
+        margin-top: 6px;
+        font-size: 14px;
+        line-height: 1;
+      }
+    }
+    .person-info-block {
+      width: 100%;
+      margin-bottom: 8px;
+      line-height: 18px;
+      .info-item-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .info-value {
+        max-width: 94px;
+        color: #00e4ff;
+        font-size: 14px;
+      }
+      .info-title {
+        width: 42px;
+        margin-right: 19px;
+        color: #cee2ff;
+      }
+    }
+  }
+  .view-track {
+    display: flex;
+    justify-content: center;
+    width: 94px;
+    height: 35px;
+    color: #1bddff;
+    font-size: 14px;
+    line-height: 32px;
+    background-image: url('../../../../assets/images/monitoring/view_track.png');
+    background-size: 100% 100%;
+    cursor: pointer;
+  }
+
+  .center-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 5px 17px 20px 12px;
+    font-size: 14px;
+    line-height: 1;
+    .attendance-info-block,
+    .location-info-block {
+      display: flex;
+      flex-direction: column;
+
+      .attendance-header,
+      .location-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 88px;
+        height: 30px;
+        margin-bottom: 13px;
+        color: #1bddff;
+        background-image: url('../../../../assets/images/monitoring/information_background.png');
+        background-size: 100% 100%;
+      }
+      .entry-time,
+      .entry-duration,
+      .current-location,
+      .last-action-time {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 13px;
+      }
+      .entry-time-title,
+      .entry-duration-title,
+      .current-location-title,
+      .last-action-time-title {
+        min-width: 56px;
+        color: #cee2ff;
+      }
+      .entry-time-value {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: 75px;
+        font-size: 14px;
+      }
+      .last-action-time-value {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: 75px;
+        font-size: 14px;
+      }
+      .entry-duration-value {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-end;
+        width: 172px;
+        padding-left: 19px;
+      }
+    }
+    .detail-block {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      .detail-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 88px;
+        height: 30px;
+        margin-bottom: 13px;
+        color: #1bddff;
+        background-image: url('../../../../assets/images/monitoring/information_background.png');
+        background-size: 100% 100%;
+      }
+
+      .detail-info-block {
+        width: 100%;
+        margin-bottom: 3px;
+      }
+
+      .detail-info-item {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        height: max-content;
+        margin-bottom: 13px;
+      }
+      .detail-info-item-title {
+        width: max-content;
+        height: 14px;
+        margin-right: 19px;
+        color: #cee2ff;
+      }
+      .detail-info-item-value {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-end;
+        width: 153px;
+        text-align: right;
+      }
+    }
+  }
+  .right-container {
+    width: 35%;
+    padding: 5px 37px 20px 17px;
+    font-size: 14px;
+    .alert-block {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      .alert-info-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 88px;
+        height: 30px;
+        margin-bottom: 13px;
+        color: #1bddff;
+        background-image: url('../../../../assets/images/monitoring/information_background.png');
+        background-size: 100% 100%;
+      }
+
+      .alert-info-block {
+        width: 100%;
+        margin-bottom: 3px;
+      }
+
+      .alert-info-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 13px;
+      }
+      .alert-info-item-title {
+        margin-right: 10px;
+        color: #cee2ff;
+      }
+    }
+  }
+}
+
+.visitor-detail-wrap {
+  .center-container {
+    padding: 5px 17px 20px 24px;
+  }
+  .right-container {
+    width: 40%;
+  }
+}
